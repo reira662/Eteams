@@ -4,6 +4,8 @@ var target;  //目的距離
 var distance;   //距離
 var seconds;    //秒
 
+var jisoku = document.getElementById("jisoku");
+console.log(jisoku.value);
 document.querySelector(".jnknlist").addEventListener("click",function(e){
         countUP();
     

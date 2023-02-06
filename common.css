@@ -6,3 +6,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+#titlegamen .title-1{
+    /*h1 = 48px  淡い黄色のネオン風*/
+    text-align: center;
+    color: #f8f4e6;
+    font-weight: bold;
+    text-shadow: 
+        0 0 0.05em #fdd35c,
+        0 0 0.1em  #fdd35c,
+        0 0 0.15em #fdd35c,
+        0 0 0.3em  #fdd35c;
+    filter: saturate(80%); /* 入力画像の彩度を変化 */
+}

@@ -8,6 +8,7 @@
 }
 #titlegamen .title-1{
     /*h1 = 48px  淡い黄色のネオン風*/
+    font-size: 60px;
     text-align: center;
     color: #f8f4e6;
     font-weight: bold;
@@ -19,12 +20,14 @@
     filter: saturate(80%); /* 入力画像の彩度を変化 */
 }
 /* スタートボタン */
-#start{
+#titlegamen a{
+    display: flex;
     color: white;
     background-color: #ef4050;
     border-bottom: 5px solid #661c22;
+    justify-content: center;
 }
-#start :hover{
+#titlegamen a:hover{
     margin-top: 3px;
     color: white;
     background-color: #33cccc;

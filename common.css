@@ -11,10 +11,22 @@
     text-align: center;
     color: #f8f4e6;
     font-weight: bold;
-    text-shadow: 
+    text-shadow: /* テキストに影を追加する */
         0 0 0.05em #fdd35c,
         0 0 0.1em  #fdd35c,
         0 0 0.15em #fdd35c,
         0 0 0.3em  #fdd35c;
     filter: saturate(80%); /* 入力画像の彩度を変化 */
+}
+/* スタートボタン */
+#start{
+    color: white;
+    background-color: #ef4050;
+    border-bottom: 5px solid #661c22;
+}
+#start :hover{
+    margin-top: 3px;
+    color: white;
+    background-color: #33cccc;
+    border-bottom: 2px solid #1a6666;
 }

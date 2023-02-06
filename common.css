@@ -1,3 +1,8 @@
 /* HTML */
 /* 画面遷移 */
 /* タイトル→ゲーム画面→結果 */
+#titlegamen{
+    background-image: url(./tokyo-station-evening.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

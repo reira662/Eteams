@@ -1,6 +1,11 @@
 body {
-    background-image: url("download.gif");
+    background-image: url("改良版.gif");
     background-repeat:no-repeat;
+    min-height: 100vh;
     background-size: cover;
-    height: 60%
+    /* background-position: center top; */
+
+    /* height: 90PX; */
+    /* width: 100px; */
+    /* max-width: 10px; */
   }

@@ -27,8 +27,8 @@ window.addEventListener("load", function(){
     if(str == "index02.html"){
         console.log(time);
         console.log(timer);
-
-        document.getElementsByTagName("p")[0].innerHTML = "目的の時間と"+ difference +"秒の差がありました。"
+        var difference = localStorage.difference;
+        document.getElementsByTagName("p")[0].innerHTML = "目的の時間と"+ difference +"秒の差がありました。";
     }
 });
 
@@ -55,7 +55,7 @@ function distanceUP(){
         distance += speedS;
         console.log(distance);
         if(target <= distance){//距離に達したら移動
-            difference = time-timer;
+            localStorage.difference = time-timer;
             location.href = "index02.html";//?difference="+difference;
         }   
     }, 1000);

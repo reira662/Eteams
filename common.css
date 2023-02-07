@@ -11,11 +11,11 @@
     text-align: center;
     color: white;
     font-weight: bold;
-    text-shadow: /* テキストに影を追加する */
-        0 0 0.05em #fdd35c,
-        0 0 0.1em  #fdd35c,
-        0 0 0.15em #fdd35c,
-        0 0 0.3em  #fdd35c;
+    /* テキストに影を追加する */
+    text-shadow: 0 0 0.05em #fdd35c,
+                 0 0 0.1em  #fdd35c,
+                 0 0 0.15em #fdd35c,
+                 0 0 0.3em  #fdd35c;
     filter: saturate(80%); /* 入力画像の彩度を変化 */
 }
 /* スタートボタン */
@@ -40,7 +40,19 @@
 }
 .bottom a:hover{
     margin-top: 3px;
-    color: white;
     background-color: #33cccc;
     border-bottom: 2px solid #1a6666;
 }
+.box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+select{
+    margin: 10px;
+    width: 100px;
+    border: solid 1px black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* ゲーム画面 */

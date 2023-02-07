@@ -3,7 +3,7 @@
 /* タイトル→ゲーム画面→結果 */
 #titlegamen{
     background-image: url(./tokyo-station-evening.jpg);
-    background-repeat: no-repeat;
+    background-position: contain;
 }
 #titlegamen .title-1{
     /*h1 = 48px  淡い黄色のネオン風*/
@@ -28,6 +28,7 @@
     text-decoration: none;
 }
 .bottom a{
+    margin-left: 10px;
     height: 80px;
     width: 150px;
     color: white;

@@ -7,8 +7,8 @@ let target;  //目的距離[m]
 let distance = 0;   //距離[m]
 let seconds;    //秒
 
-let timers = [20,40,60];
-var targets = [100,200,300];
+// let timers = [20,40,60];
+// var targets = [100,200,300];
 
 //ページを読み込んだ時実行
 window.addEventListener("load", function(){
@@ -16,10 +16,13 @@ window.addEventListener("load", function(){
     // split('/'):'/'区切りの配列
     // pop():配列の最終要素のみを取得  
     var str = window.location.href.split('/').pop();//ファイル名の取得
+    
     if(str == "index.html"){
-        var level = document.getElementById('bottom').addEventListener("click", function(){
-            localStorage.timer = timers[level.value];
-            localStorage.target = targets[level.value]
+        var d_sel = document.getElementById("distance_selection");
+        var t_sel =document.getElementById("time_selection");
+        document.getElementsByClassName('bottom')[0].addEventListener("click", function(){
+            localStorage.target = d_sel.value;
+            localStorage.timer = t_sel.value
         });
     }
     if(str == "index01.html"){

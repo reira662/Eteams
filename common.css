@@ -4,13 +4,12 @@
 #titlegamen{
     background-image: url(./tokyo-station-evening.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
 }
 #titlegamen .title-1{
     /*h1 = 48px  淡い黄色のネオン風*/
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
-    color: #f8f4e6;
+    color: white;
     font-weight: bold;
     text-shadow: /* テキストに影を追加する */
         0 0 0.05em #fdd35c,
@@ -20,14 +19,25 @@
     filter: saturate(80%); /* 入力画像の彩度を変化 */
 }
 /* スタートボタン */
-#titlegamen a{
+.bottom{
+    padding: 5px;
+    position: relative;
     display: flex;
+    justify-content: center;
+    top: 200px;
+    text-decoration: none;
+}
+.bottom a{
+    height: 80px;
+    width: 150px;
     color: white;
     background-color: #ef4050;
     border-bottom: 5px solid #661c22;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
-#titlegamen a:hover{
+.bottom a:hover{
     margin-top: 3px;
     color: white;
     background-color: #33cccc;

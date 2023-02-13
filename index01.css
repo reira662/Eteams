@@ -16,3 +16,13 @@ body {
     height: 500px;
     background-position: top;
 }
+
+body {
+    background-image: url("68157668.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-position: bottom;
+}
+
+
+

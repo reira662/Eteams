@@ -9,19 +9,15 @@
 }
 
  
-body {
-    background-image: url("全画面0003135prvtqz.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    background-position: top;
+.train{
+    display: flex;
+    flex-direction: column;
 }
-
-body {
-    background-image: url("68157668.jpg");
-    background-repeat: no-repeat;
-    height: 500px;
-    background-position: bottom;
+.sky{
+    min-height: 55%;
+}
+.noru{
+    min-height: 45%;
 }
 
 

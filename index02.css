@@ -1,5 +1,39 @@
 body {
-    background-image: url("download.gif");
+    background-image: url("改良版.gif");
     background-repeat:no-repeat;
-    height: 60%
+    min-height: 100vh;
+    background-size: cover;
+    /* background-position: center top; */
+
+    /* height: 90PX; */
+    /* width: 100px; */
+    /* max-width: 10px; */
   }
+.kekka{
+  margin: 10px 0;
+  background-color: #bee0c2;
+}
+.kekka .kekka-title{
+  font-size: 1.2em;
+  background-color: #37a34a;
+  padding: 4px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.kekka p{
+  text-align: center;
+  padding: 15px 20px;
+  margin: 0;
+}
+.return{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 4px;
+  color: black;
+  background-color: #3cb37a;
+  border-radius: 50px;
+  width: 150px;
+}

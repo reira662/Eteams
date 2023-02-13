@@ -14,11 +14,16 @@
     flex-direction: column;
 }
 .sky{
-    min-height: 55%;
+    height: 55%;
 }
-.noru{
-    min-height: 45%;
+.bottom{
+    position: relative;
 }
-
-
-
+.bottom img{
+    height: 45%;
+}
+.sentaku{
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+}

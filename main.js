@@ -2,33 +2,35 @@ var timer;
 var difference;
 var time;
 let speedH;  //km/h
-let speedS;  //m/s
+let speedS;  //km/s
 let target;  //目的距離[m]
 let distance = 0;   //距離[m]
 let seconds;    //秒
 
-// let timers = [20,40,60];
-// var targets = [100,200,300];
+var name = ["盛岡駅","一ノ関駅","花巻駅"]
+var timers = [12,70,25];
+var targets = [11,90,30];
 
 //ページを読み込んだ時実行
 window.addEventListener("load", function(){
     // window.location.href:URLを取得
     // split('/'):'/'区切りの配列
     // pop():配列の最終要素のみを取得  
-    var str = window.location.href.split('/').pop();//ファイル名の取得
+    var str = window.location.href.split('/').pop();//HTML名の取得
     
     if(str == "index.html"){
         var d_sel = document.getElementById("distance_selection");
-        var t_sel =document.getElementById("time_selection");
+        // var t_sel =document.getElementById("time_selection");
         document.getElementsByClassName('bottom')[0].addEventListener("click", function(){
             localStorage.target = d_sel.value;
-            localStorage.timer = t_sel.value
+            // localStorage.timer = t_sel.value;
         });
     }
     if(str == "index01.html"){
         time = 0;
-        timer = localStorage.timer;
-        target = localStorage.target;
+        var i = localStorage.target;
+        timer = timers[i];
+        target = targets[i];//localStorage.target;
         speedH = document.getElementById("jisoku");//時速のDOM
         countUP();
         distanceUP();  
@@ -36,6 +38,7 @@ window.addEventListener("load", function(){
     if(str == "index02.html"){
         console.log(time);
         difference = localStorage.difference;
+        if(difference)
         document.getElementsByTagName("p")[0].innerHTML = "目的の時間と"+ difference +"秒の差がありました。";
     }
 });
@@ -54,7 +57,7 @@ function countUP(){
 
 //速度変換
 function conversion(Hspeed){    
-    speedS = (Hspeed * 1000) / 3600;
+    speedS = (Hspeed ) / 60;
 }
 
 //距離測定

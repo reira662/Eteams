@@ -1,11 +1,12 @@
 /* HTML */
 /* 画面遷移 */
 /* タイトル→ゲーム画面→結果 */
-#titlegamen{
+#titlegamen {
     background-image: url("./tokyo-station-evening.jpg");
     background-position: contain;
 }
-#titlegamen .title-1{
+
+#titlegamen .title-1 {
     /*h1 = 48px  淡い黄色のネオン風*/
     font-size: 80px;
     text-align: center;
@@ -13,13 +14,16 @@
     font-weight: bold;
     /* テキストに影を追加する */
     text-shadow: 0 0 0.05em #fdd35c,
-                 0 0 0.1em  #fdd35c,
-                 0 0 0.15em #fdd35c,
-                 0 0 0.3em  #fdd35c;
-    filter: saturate(80%); /* 入力画像の彩度を変化 */
+        0 0 0.1em #fdd35c,
+        0 0 0.15em #fdd35c,
+        0 0 0.3em #fdd35c;
+    filter: saturate(80%);
+    /* 入力画像の彩度を変化 */
 }
+
 /* スタートボタン */
-.bottom{
+.bottom,
+.bottom1 {
     padding: 5px;
     position: relative;
     display: flex;
@@ -27,8 +31,14 @@
     top: 200px;
     text-decoration: none;
     color: white;
+
 }
-.bottom a{
+
+.bottom1 {
+    background-color: #000;
+}
+
+.bottom a {
     margin-left: 10px;
     height: 80px;
     width: 150px;
@@ -39,17 +49,20 @@
     justify-content: center;
     align-items: center;
 }
-.bottom a:hover{
+
+.bottom a:hover {
     margin-top: 3px;
     background-color: #33cccc;
     border-bottom: 2px solid #1a6666;
 }
-.box{
+
+.box {
     position: relative;
     display: flex;
     justify-content: center;
 }
-.box select{
+
+.box select {
     margin: 15px;
     height: 25px;
     width: 150px;
@@ -58,4 +71,5 @@
     box-sizing: border-box;
     background-color: white;
 }
+
 /* ゲーム画面 */

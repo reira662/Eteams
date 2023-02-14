@@ -67,6 +67,7 @@ function conversion(Hspeed){
 function distanceUP(){
     setInterval(() => {
         distance += speedS;
+        document.querySelector(".dist").innerHTML=(Number(target)-Number(distance))
         console.log(distance);
         if(target <= distance){//距離に達したら移動
             localStorage.difference = time-timer;

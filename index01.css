@@ -1,5 +1,6 @@
 .km{
     display: inline-block;      /* インラインブロック要素にする */
+    color: white;
 }
 .a{
     clear:both; 
@@ -9,26 +10,15 @@
 }
 
  
-.train{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.sky{
-    height: 600px;
-    width: auto;
-    object-fit: cover;
-}
-.bottom{
-    position: relative;
-}
-.bottom img{
-    height: 300px;
-    width: 900px;
-    object-fit: cover;
+body{
+    background-image:url("./余白改.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom center;
 }
 .sentaku{
     position: absolute;
-    bottom: 25%;
-    left: 5%;
+    bottom: 10%;
+    left: 15%;
 }

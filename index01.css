@@ -11,16 +11,21 @@
  
 .train{
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 .sky{
-    height: 55%;
+    height: 600px;
+    width: auto;
+    object-fit: cover;
 }
 .bottom{
     position: relative;
 }
 .bottom img{
-    height: 45%;
+    height: 300px;
+    width: 900px;
+    object-fit: cover;
 }
 .sentaku{
     position: absolute;

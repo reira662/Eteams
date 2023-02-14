@@ -6,6 +6,7 @@ let speedS;  //km/s
 let target;  //目的距離[m]
 let distance = 0;   //距離[m]
 let seconds;    //秒
+let hiscore;
 
 var name = ["盛岡駅","一ノ関駅","花巻駅"]
 var timers = [12,70,25];
@@ -38,8 +39,10 @@ window.addEventListener("load", function(){
     if(str == "index02.html"){
         console.log(time);
         difference = localStorage.difference;
-        if(difference)
-        document.getElementsByTagName("p")[0].innerHTML = "目的の時間と"+ difference +"秒の差がありました。";
+        hiscore = localStorage.hiscore;
+            document.getElementsByTagName("p")[0].innerHTML = "目的の時間と"+ difference +"秒の差がありました。";
+            document.getElementsByTagName("p")[2].innerHTML = hiscore;
+
     }
 });
 
@@ -67,6 +70,9 @@ function distanceUP(){
         console.log(distance);
         if(target <= distance){//距離に達したら移動
             localStorage.difference = time-timer;
+            hiscore = parseInt(localStorage.hisc);
+            if(hiscore < (time-timer))
+                localStorage.hiscore = time-timer;
             location.href = "index02.html";
         }   
     }, 1000);

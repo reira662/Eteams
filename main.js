@@ -8,9 +8,9 @@ let distance = 0;   //距離[m]
 let dseconds = 0;    //秒
 let hiscore = 0;
 
-var name = ["盛岡駅", "花巻駅", "一ノ関駅"]
-var timers = [12, 25, 70];
-var targets = [11, 30, 90];
+var name = ["盛岡駅", "花巻駅", "一ノ関駅","摺沢駅"]
+var timers = [12, 25, 70, 110];
+var targets = [11, 30, 90, 110];
 
 //ページを読み込んだ時実行
 window.addEventListener("load", function () {

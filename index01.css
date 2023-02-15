@@ -1,35 +1,50 @@
-.km{
-    display: inline-block;      /* インラインブロック要素にする */
+.km {
+    display: inline-block;
+    /* インラインブロック要素にする */
     color: white;
 }
-.a{
-    clear:both; 
+
+.a {
+
+    clear: both;
+    font-size: 25px;
 }
-.gazou{
+
+.spead {
+    position: relative;
+    height:25px;
+}
+
+.gazou {
     background-position: 0%;
 }
 
- 
-body{
-    background-image:url("./余白改.jpg");
+
+body {
+    background-image: url("./余白改.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom center;
 }
-.sentaku{
+
+.sentaku {
     position: absolute;
-    bottom: 10%;
-    left: 15%;
-    transform:scale(3,3);
+    bottom: 15%;
+    left: 10%;
+    transform: scale(3, 3);
     font-family: 'Amatic SC', cursive;
     color: white;
-    position: absolute;
-    display: flex;
-    justify-content:left;
 }
+
+.nokori {
+    position: relative;
+    height: 5px;
+    display: flex;
+}
+
 .black {
-	background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 /* p{
@@ -41,11 +56,11 @@ body{
     justify-content:left;
 } */
 
-.game_left{
-    transform:scale(6,6);
+.game_left {
+    transform: scale(6, 6);
     font-family: 'Amatic SC', cursive;
     color: white;
     position: absolute;
     display: flex;
-    justify-content:left;
+    justify-content: left;
 }

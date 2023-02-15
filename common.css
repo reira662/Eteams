@@ -62,14 +62,16 @@
     justify-content: center;
 }
 
+
 .box select {
     margin: 15px;
-    height: 25px;
+    height: 40px;
     width: 150px;
     cursor: pointer;
     border: solid 1px #33cccc;
     box-sizing: border-box;
     background-color: white;
+    font-size: 30px;
 }
 
 /* ゲーム画面 */

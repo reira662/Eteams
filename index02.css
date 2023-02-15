@@ -15,7 +15,7 @@ body {
   height: 20%;
   margin: 0 10% 0 30%;
   background-color: #1c1a4d;
-  border-bottom: 1px solid #1c1a4d;
+  border-bottom: 35px solid #1c1a4d;
   /* font-weight: bold; */
   /* letter-spacing: 0.05em; */
 }
@@ -39,11 +39,13 @@ body {
 }
 
 .kekka-d {
+  position: relative;
+  top: 35px;
   width: 90%;
   text-align: center;
   margin: 0 5% 10px 5%;
   /* margin-left: 5%; */
-  /* padding: 15px 0; */
+  padding: 5px 0;
   background-color: #000000;
   color: #00ff15;
   font-size: 30px;

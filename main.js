@@ -42,7 +42,6 @@ window.addEventListener("load", function () {
         distanceUP();
     }
     if (str == "index02.html") {
-        console.log(time);
         difference = parseFloat(localStorage.difference);
         hiscore = parseInt(localStorage.hiscore);
         if (difference < 0) {
@@ -58,7 +57,10 @@ window.addEventListener("load", function () {
         //     document.getElementsByTagName("p")[5].innerHTML = hiscore;
 
         // }
+        // for(i = 0; i < 4; i++){
+        //     document.getElementsByClassName("img")[0].innerHTML.src =  "train2.png";
 
+        // }
 
         document.getElementsByClassName("return")[0].addEventListener("click", function () {
             localStorage.removeItem('target');
@@ -81,7 +83,6 @@ function countUP() {
             if (100 <= dseconds)
                 dseconds = 0;
         }, 100)
-        console.log(time);
 
         time += 1;
         conversion(speedH.value);
@@ -99,7 +100,6 @@ function distanceUP() {
     setInterval(() => {
         distance += speedS;
         document.querySelector(".dist").innerHTML = (Number(target) - Number(distance)).toFixed(2)
-        console.log(Number(target) - Number(distance));
         if (target <= distance) {//距離に達したら移動
             localStorage.difference = time + (dseconds * 0.01) - timer;
             location.href = "index02.html";

@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
         var i = localStorage.target;
         timer = timers[i];
         target = targets[i];//localStorage.target;
-        this.window.alert("目標時間は" + timer + "分です。")
+        this.window.alert("目標時間は" + timer + "分です。\n※　1分=1秒")
         speedH = document.getElementById("jisoku");//時速のDOM
         countUP();
         distanceUP();
@@ -51,27 +51,12 @@ window.addEventListener("load", function () {
             document.getElementsByTagName("p")[4].innerHTML = "約" + difference.toFixed(2) + "分の遅れが出ております。";
         else
             document.getElementsByTagName("p")[4].innerHTML = "時間通り運行しております。";
-        // if (hiscore < difference && 0 <= hiscore || difference < hiscore && hiscore <= 0) {
-        //     localStorage.hiscore = difference;
-        //     hiscore = localStorage.hiscore;
-        //     document.getElementsByTagName("p")[5].innerHTML = hiscore;
 
-        // }
-        // for(i = 0; i < 4; i++){
-        //     document.getElementsByClassName("img")[0].innerHTML.src =  "train2.png";
-
-        // }
 
         document.getElementsByClassName("return")[0].addEventListener("click", function () {
             localStorage.removeItem('target');
             localStorage.removeItem('difference');
-            //            localStorage.removeItem('key');
-            //            storage.clear();
         });
-        // document.getElementsByClassName("reset")[0].addEventListener("click", function () {
-        //     localStorage.clear();
-
-        // });
     }
 });
 
@@ -87,7 +72,6 @@ function countUP() {
         time += 1;
         conversion(speedH.value);
     }, 1000);
-    // timer = setTimeout("countUP()",1000);
 }
 
 //速度変換

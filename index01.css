@@ -12,7 +12,7 @@
 
 .spead {
     position: relative;
-    height:30px;
+    height: 30px;
 }
 
 .gazou {
@@ -46,15 +46,6 @@ body {
 .black {
     background-color: rgb(0, 0, 0);
 }
-
-/* p{
-    transform:scale(3,4);
-    font-family: 'Amatic SC', cursive;
-    color: white;
-    position: absolute;
-    display: flex;
-    justify-content:left;
-} */
 
 .game_left {
     transform: scale(6, 6);

@@ -16,8 +16,6 @@ body {
   margin: 0 10% 0 30%;
   background-color: #040075;
   border-bottom: 35px solid #040075;
-  /* font-weight: bold; */
-  /* letter-spacing: 0.05em; */
 }
 
 .kekka-title {
@@ -58,33 +56,7 @@ body {
 .return {
   background-color: #000000;
 }
-.return:hover{
+
+.return:hover {
   transform: scale(1.1);
 }
-
-/*  background-image: url("6.png");
- display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 4px;
-  color: black;
-  background-color: #3cb37a;
-  border-radius: 50px; 
-  width: 150px;
-}
-.reset{
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 4px;
-  color: black;
-  background-color: #3cb37a;
-  border-radius: 50px;
-}
-.return,
-.reset{
-  position: relative;
-  top: 400px;
-  border: 1px solid #000000;
-} */

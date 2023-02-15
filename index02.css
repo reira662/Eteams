@@ -41,8 +41,6 @@ body {
   width: 90%;
   text-align: center;
   margin: 0 5% 10px 5%;
-  /* margin-left: 5%; */
-  /* padding: 15px 0; */
   background-color: #000000;
   color: #00ff15;
   font-size: 30px;
@@ -55,30 +53,3 @@ body {
 .return {
   background-color: #000000;
 }
-
-/*  background-image: url("6.png");
- display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 4px;
-  color: black;
-  background-color: #3cb37a;
-  border-radius: 50px; 
-  width: 150px;
-}
-.reset{
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 4px;
-  color: black;
-  background-color: #3cb37a;
-  border-radius: 50px;
-}
-.return,
-.reset{
-  position: relative;
-  top: 400px;
-  border: 1px solid #000000;
-} */

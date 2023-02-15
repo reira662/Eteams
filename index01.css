@@ -4,6 +4,7 @@
 }
 .a{
     clear:both; 
+    font-size: 25px;
 }
 .gazou{
     background-position: 0%;
@@ -19,14 +20,16 @@ body{
 }
 .sentaku{
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 15%;
     transform:scale(3,3);
     font-family: 'Amatic SC', cursive;
     color: white;
-    position: absolute;
+}
+.nokori{
+    position: relative;
+height: 20px;
     display: flex;
-    justify-content:left;
 }
 .black {
 	background-color: rgb(0, 0, 0);
